@@ -1,0 +1,25 @@
+{
+  "name": "destination-api",
+  "version": "1.0.0",
+  "description": "destination-api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supriyatech06/destination-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supriyatech06/destination-api/issues"
+  },
+  "homepage": "https://github.com/supriyatech06/destination-api#readme",
+  "dependencies": {
+    "json": "^11.0.0",
+    "server": "^1.0.38"
+  }
+}
