@@ -1,13 +1,10 @@
+const jsonServer = require("json-server"); // importing json-server library
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 3001; // you can use any port number here; i chose to use 3001
 
-{
-    "name": "mock-server-app",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-  }
+server.use(middlewares);
+server.use(router);
+
+server.listen(port);
